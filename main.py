@@ -82,7 +82,7 @@ def main():
                     keyboard1 = create_keyboard2()
                     vk = vk_session.get_api()
                     vk.messages.send(user_id=event.obj.message['from_id'],
-                                    message="Виберите масштаб (Город, Страна)",
+                                    message="Выберите масштаб (Город, Страна)",
                                     random_id=random.randint(0, 2 ** 64), keyboard=keyboard1)
                     f1 = False
                     f2 = True
@@ -104,7 +104,7 @@ def main():
                 else:
                     vk = vk_session.get_api()
                     vk.messages.send(user_id=event.obj.message['from_id'],
-                                     message="Виберите масштаб (Город, Страна)",
+                                     message="Выберите масштаб (Город, Страна)",
                                      random_id=random.randint(0, 2 ** 64), keyboard=keyboard1)
                     continue
                 vk = vk_session.get_api()
