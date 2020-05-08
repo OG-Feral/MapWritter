@@ -23,11 +23,6 @@ def create_keyboard3():
     return keyboard.get_keyboard()
 
 
-def create_empty_keyboard():
-    keyboard = vk_api.keyboard.VkKeyboard.get_empty_keyboard()
-    return keyboard
-
-
 def map(scale, var, place):
     geocoder_request = (f"http://geocode-maps.yandex.ru/1.x/?apikey=40d1649f-0493-4b70-98ba-98533de7710b&geocode={place}&format=json")
     response = requests.get(geocoder_request)
