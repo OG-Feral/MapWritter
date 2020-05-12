@@ -55,6 +55,7 @@ def map(scale, var, place):
         file.write(response.content)
     return [map_file, u]
 
+
 def main():
     vk_session = vk_api.VkApi(
         token="1b9f13f8f6a4774f3a127b91b4b69fb702502c6621aeea2778fdcead8f53b1740b685cd77edb7b36359a8")
